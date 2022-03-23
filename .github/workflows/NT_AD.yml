@@ -37,7 +37,7 @@ jobs:
       - name: ZBR
         run: |
           cd TB1_MAIN
-          call 100_ZipBatchRun.bat
+          ./100_ZipBatchRun.bat
       - name: SZBM
         run: |
           cd TB1_MAIN
@@ -45,7 +45,7 @@ jobs:
       - name: SBR
         run: |
           cd TB1_MAIN
-          call 270_SplitBatchRun.bat
+          ./270_SplitBatchRun.bat
       - name: SIM
         run: |
           cd TB1_MAIN
@@ -53,7 +53,7 @@ jobs:
       - name: CZAIR
         run: |
           cd TB1_MAIN
-          call 360_combineZipAndImageRun.bat
+          ./360_combineZipAndImageRun.bat
       - name: T1-1
         run: |
           cd TB1_MAIN
@@ -81,7 +81,7 @@ jobs:
       - name: CCR
         run: |
           cd TB1_MAIN
-          call 585_CoverCompressRun.bat
+          ./585_CoverCompressRun.bat
       - name: CCDF
         run: |
           cd TB1_MAIN
@@ -93,7 +93,7 @@ jobs:
       - name: GZMR
         run: |
           cd TB1_MAIN
-          call 650_GitZipMakeRun.bat
+          ./650_GitZipMakeRun.bat
       - name: GU
         run: |
           cd TB1_MAIN
