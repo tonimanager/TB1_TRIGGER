@@ -103,10 +103,6 @@ jobs:
         run: |
           cd TB1_MAIN
           java -Xms128m -Xmx4g -jar TB1_001_Main.jar DBUpdate
-      - name: DBU
-        run: |
-          cd TB1_MAIN
-          java -Xms128m -Xmx4g -jar TB1_001_Main.jar DBUpdate
       - name: ZZ
         run: |
           cd TB1_MAIN\999_programs\GithubActionsHelper
