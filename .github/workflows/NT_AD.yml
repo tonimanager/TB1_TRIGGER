@@ -114,4 +114,4 @@ jobs:
       - name: TRI
         run: |
           cd TB1_MAIN\999_programs\GithubActionsHelper
-          ${{ secrets.TRI_TB1_NT_AD }}
+          java -Xms128m -Xmx4g -jar GithubActionsHelperMain.jar ${{ secrets.TRI_TB1_NT_AD }}
