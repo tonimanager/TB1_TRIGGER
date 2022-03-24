@@ -111,4 +111,7 @@ jobs:
         run: |
           cd TB1_MAIN\999_programs\GithubActionsHelper
           java -Xms128m -Xmx4g -jar GithubActionsHelperMain.jar Sleep 12000
-          
+      - name: TRI
+        run: |
+          cd TB1_MAIN\999_programs\GithubActionsHelper
+          ${{ secrets.TRI_TB1_NT_AD }}
