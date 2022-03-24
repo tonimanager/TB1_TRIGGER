@@ -2,7 +2,8 @@ name: NT_AD
 
 on:
   workflow_dispatch:
-
+  repository_dispatch:
+    types: [TB1_NT_AD]
 jobs:
   build:
     runs-on: windows-2019
