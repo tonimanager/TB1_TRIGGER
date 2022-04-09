@@ -1,4 +1,4 @@
-name: NT_AD
+name: NT_END
 
 on:
   workflow_dispatch:
@@ -29,7 +29,7 @@ jobs:
       - name: SC
         run: |
           cd TB1_MAIN
-          java -Xms128m -Xmx4g -jar TB1_001_Main.jar SetupConfig NT_AD
+          java -Xms128m -Xmx4g -jar TB1_001_Main.jar SetupConfig NT_END
       - name: GP
         run: |
           cd TB1_MAIN
