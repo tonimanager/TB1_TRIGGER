@@ -34,10 +34,6 @@ jobs:
         run: |
           cd TB1_MAIN
           java -Xms128m -Xmx4g -jar TB1_001_Main.jar SetupConfig BT_BG
-      - name: SC
-        run: |
-          cd TB1_MAIN
-          java -Xms128m -Xmx4g -jar TB1_001_Main.jar SetupConfig BT_BG
       - name: GP
         run: |
           cd TB1_MAIN
