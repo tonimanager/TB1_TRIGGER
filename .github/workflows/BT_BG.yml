@@ -61,7 +61,7 @@ jobs:
       - name: ls2
         run: |
           cd TB1_MAIN
-          ls -al
+          ls
       - name: cat
         run: |
           cd TB1_MAIN
