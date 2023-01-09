@@ -58,6 +58,14 @@ jobs:
         run: |
           cd TB1_MAIN
           java -Xms128m -Xmx4g -jar TB1_001_Main.jar SplitImagesMake
+      - name: ls2
+        run: |
+          cd TB1_MAIN
+          ls -al
+      - name: cat
+        run: |
+          cd TB1_MAIN
+          cat 360_combineZipAndImageRun.bat
       - name: CZAIR
         run: |
           cd TB1_MAIN
