@@ -1,11 +1,11 @@
-name: NT_END
+name: BT_BG
 
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [TB1_NT_AD]
-  schedule:
-    - cron:  '10 0,4,8,12,16,20 * * *'
+    types: [TB1_BT_BG]
+  #schedule:
+  #  - cron:  '10 0,4,8,12,16,20 * * *'
     
 jobs:
   build:
@@ -26,10 +26,18 @@ jobs:
         run: |
           cd TB1_MAIN
           ls
+      - name: CF
+        run: |
+          cd TB1_MAIN
+          java -Xms128m -Xmx4g -jar TB1_001_Main.jar SetupCFBypassMode
       - name: SC
         run: |
           cd TB1_MAIN
-          java -Xms128m -Xmx4g -jar TB1_001_Main.jar SetupConfig NT_END
+          java -Xms128m -Xmx4g -jar TB1_001_Main.jar SetupConfig BT_BG
+      - name: SC
+        run: |
+          cd TB1_MAIN
+          java -Xms128m -Xmx4g -jar TB1_001_Main.jar SetupConfig BT_BG
       - name: GP
         run: |
           cd TB1_MAIN
