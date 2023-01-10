@@ -55,6 +55,11 @@ jobs:
         run: |
           cd TB1_MAIN
           du 100_DOWNLOAD_TEMP
+      - name: test4
+        run: |
+          cd TB1_MAIN
+          cd 910_TEMP
+          cat logs.txt
       - name: ZBR
         run: |
           cd TB1_MAIN
