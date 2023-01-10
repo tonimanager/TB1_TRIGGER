@@ -42,24 +42,6 @@ jobs:
         run: |
           cd TB1_MAIN
           java -Xms128m -Xmx4g -jar TB1_001_Main.jar DownloadPagesRunner
-      - name: test1
-        run: |
-          cd TB1_MAIN
-          cd 100_DOWNLOAD_TEMP
-          ls
-      - name: test2
-        run: |
-          cd TB1_MAIN
-          cat 100_ZipBatchRun.bat
-      - name: test3
-        run: |
-          cd TB1_MAIN
-          du 100_DOWNLOAD_TEMP
-      - name: test4
-        run: |
-          cd TB1_MAIN
-          cd 910_TEMP
-          cat logs.txt
       - name: ZBR
         run: |
           cd TB1_MAIN
@@ -108,18 +90,6 @@ jobs:
         run: |
           cd TB1_MAIN
           java -Xms128m -Xmx4g -jar TB1_001_Main.jar UpdateGitJsonInfo
-      - name: CC
-        run: |
-          cd TB1_MAIN
-          java -Xms128m -Xmx4g -jar TB1_001_Main.jar CompressCover
-      - name: CCR
-        run: |
-          cd TB1_MAIN
-          ./585_CoverCompressRun.bat
-      - name: CCDF
-        run: |
-          cd TB1_MAIN
-          java -Xms128m -Xmx4g -jar TB1_001_Main.jar CompressCoverDelFile
       - name: GZM
         run: |
           cd TB1_MAIN
